@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Mon Agenda Étudiant</h1>
+</header>
+
+<main>
+  <div class="form-container">
+    <h2>Ajouter un cours</h2>
+    <input type="text" id="matiere" placeholder="Nom de la matière">
+    <input type="text" id="jour" placeholder="Jour (ex: Lundi)">
+    <input type="text" id="heure" placeholder="Heure (ex: 09:00-10:00)">
+    <button onclick="ajouterCours()">Ajouter</button>
+  </div>
+
+  <div class="schedule-container">
+    <h2>Emploi du temps</h2>
+    <table id="emploiTemps">
+      <thead>
+        <tr>
+          <th>Matière</th>
+          <th>Jour</th>
+          <th>Heure</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Les cours ajoutés apparaîtront ici -->
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
